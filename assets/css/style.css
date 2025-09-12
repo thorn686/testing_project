@@ -2,7 +2,7 @@
 :root {
     /* fonsize */
     --font-size-heading-1: 60px !important;
-    --font-size-heading-2: 28px !important;
+    --font-size-heading-2: 32px !important;
     --font-size-subtitle: 24px !important;
     --font-size-text: 16px !important;
     --font-size-tiny: 14px;
@@ -15,7 +15,7 @@
     --border-radius: 15px;
     /* font color */
     --bg-body-1: #ffffff;
-    --bg-body-2: #f2f4f7;
+    --bg-body-2: linear-gradient(0deg, #f6f5ff, #fff);
     --lg-color: #1560bd;
     --bg-box: #e5e7eb;
     --bg-card: #ffffff;
@@ -29,7 +29,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
      :root {
         --font-size-heading-1: 48px;
-        --font-size-heading-2: 20px;
+        --font-size-heading-2: 24px;
         --font-size-subtitle: 16px;
     }
 }
@@ -66,6 +66,13 @@ header .navbar .login {
     color: var(--bg-body-1);
 }
 
+.navbar .navbar-brand img {
+    width: 180px;
+}
+
+
+/* hero-banner */
+
 .hero-banner .hero-block {
     height: 100%;
     width: 100%;
@@ -94,13 +101,11 @@ header .navbar .login {
     height: 100%;
 }
 
-.modal {
-    border: 1px solid rebeccapurple;
-}
 
-.modal .modal-body {
-    width: 900px;
-    padding: 20px 10px;
+/* sign-up modal */
+
+.custom-modal .modal-dialog {
+    max-width: 900px;
 }
 
 .modal .modal-body .modal-img {
@@ -110,5 +115,52 @@ header .navbar .login {
 
 .modal .modal-body input {
     padding: 10px;
-    width: 300px;
+    width: 90%;
+}
+
+
+/* new-main-area */
+
+.new-main-area.bg {
+    background-image: var(--bg-body-2);
+}
+
+.new-main-area .new-main-contect,
+.new-main-area .new-main-title,
+.new-main-area .new-main-recommend {
+    text-align: center;
+}
+
+.new-main-area .new-main-title {
+    font-weight: 700;
+    font-size: var(--font-size-heading-2);
+    color: var(--color-title);
+}
+
+.new-main-area .new-main-recommend {
+    font-size: var(--font-size-text);
+    color: var(--lg-color);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.new-main-area .new-main-contect {
+    padding-bottom: 40px;
+}
+
+.new-main-area .card {
+    background: none;
+    border: none;
+}
+
+.new-main-area .card .card-icon {
+    padding: 20px 0px 0px 15px;
+    font-size: var(--font-size-heading-2);
+    color: var(--lg-color);
+}
+
+.new-main-area .card .card-title {
+    font-weight: 600;
+    padding-bottom: 1px;
+    font-size: var(--font-size-subtitle);
 }
