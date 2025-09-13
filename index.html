@@ -81,15 +81,15 @@
                             <form>
                                 <div class="input-group">
                                     <label for="email" class="py-2">Email</label>
-                                    <input class="modal-input " type="email" placeholder="email@gmail.com">
+                                    <input class="modal-input " type="email" placeholder="email@gmail.com" required>
                                 </div>
                                 <div class="input-group"><label for="password" class="py-2">Password</label>
-                                    <input class="modal-input" type="password" placeholder="********">
+                                    <input class="modal-input" type="password" placeholder="********" required>
                                     <i class="fa-solid fa-eye-slash modal-icon" id="togglePassword"></i>
                                 </div>
                                 <div class="input-group">
                                     <label for="confirm Password" class="py-2">Conform Password</label>
-                                    <input class="modal-input" type="c-password" placeholder="********">
+                                    <input class="modal-input" type="password" placeholder="********" required>
                                     <i class="fa-solid fa-eye-slash modal-icon" id="togglePassword"></i>
                                 </div>
                                 <div class="w-100 d-flex py-2 justify-content-between">
@@ -98,7 +98,7 @@
                                         <span>Remmeber Me</span>
                                     </span>
                                     <span>
-                                        <a href="" data-bs-toggle="modal" data-bs-target="#signin" data-bs-whatever="@mdo">Sign In</a>
+                                        <a href="" class="sign-in-link" data-bs-toggle="modal" data-bs-target="#signin" data-bs-whatever="@mdo">Sign In</a>
                                     </span>
                                 </div>
                                 <div class="w-100 d-flex justify-content-end">
@@ -128,26 +128,26 @@
                             <form>
                                 <div class="input-group">
                                     <label for="email" class="py-2">Email</label>
-                                    <input class="modal-input " type="email" placeholder="email@gmail.com">
+                                    <input class="modal-input " type="email" placeholder="email@gmail.com" required>
                                 </div>
                                 <div class="input-group"><label for="password" class="py-2">Password</label>
-                                    <input class="modal-input" type="password" placeholder="********">
+                                    <input class="modal-input" type="password" placeholder="********" required>
                                     <i class="fa-solid fa-eye-slash modal-icon" id="togglePassword"></i>
                                 </div>
                                 <div class="w-100 d-flex py-2 justify-content-between">
                                     <span>
-                                        <input type="checkbox" class="radio">
+                                        <input type="checkbox" required class="radio">
                                         <span>Remmeber Me</span>
                                     </span>
                                     <span>
-                                         <a class="ps-1" href="" data-bs-toggle="modal" data-bs-target="#forget-p" data-bs-whatever="@mdo">Forget Password?</a>
+                                         <a class="ps-1 forget-link" href="" data-bs-toggle="modal" data-bs-target="#forget-p" data-bs-whatever="@mdo">Forget Password?</a>
                                     </span>
                                 </div>
                                 <div class="w-100 d-flex justify-content-center">
                                     <button class="btn-modal">Sign In</button>
                                 </div>
                                 <p class="d-flex justify-content-center pt-3 pb-0">New user?
-                                    <a class="ps-1" href="" data-bs-toggle="modal" data-bs-target="#signup" data-bs-whatever="@mdo">Sign Up</a></p>
+                                    <a class="ps-2 sign-in-link" href="" data-bs-toggle="modal" data-bs-target="#signup" data-bs-whatever="@mdo">Sign Up</a></p>
                                 <div class="other-app-box">
                                     <p class="d-flex justify-content-center title p-0">Login With</p>
                                     <div class="d-flex justify-content-center">
@@ -167,7 +167,7 @@
     </div>
     <div class="modal fade custom-modal" id="forget-p" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable d-flex justify-content-center">
-            <div class="modal-content w-75">
+            <div class="modal-content w-75 forget-background">
                 <div class="modal-body">
                     <div class="d-flex">
                         <h1 class="modal-title d-flex justify-content-center w-100 mt-3">
@@ -182,12 +182,47 @@
                     <form class="d-flex justify-content-center">
                         <div class="w-75">
                             <div class="input-group">
-                                <input class="modal-input" type="email" placeholder="email@gmail.com">
+                                <input class="modal-input" type="email" required placeholder="email@gmail.com" required>
                             </div>
                             <div class="w-100 d-flex justify-content-center">
-                                <button class="w-50 btn-modal my-4">
+                                <a type="button" href="" data-bs-toggle="modal" data-bs-target="#forget-p1" data-bs-whatever="@mdo" class="sendcode w-50 btn-modal my-4">
                                     Send Code
-                                </button>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade custom-modal" id="forget-p1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable d-flex justify-content-center">
+            <div class="modal-content w-75 forget-background">
+                <div class="modal-body">
+                    <div class="d-flex">
+                        <h1 class="modal-title d-flex justify-content-center w-100 mt-3">
+                            Check Your OTP Code.
+                        </h1>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#forget-p" data-bs-whatever="@mdo" class="back-ward">
+                            ←
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <p class="text-center">Please check your email for OTP 6 numbers.</p>
+                    <form class="d-flex justify-content-center">
+                        <div class="w-75">
+                            <div class="input-group d-flex justify-content-center">
+                                <input class="input-code" type="text" maxlength="1" required>
+                                <input class="input-code" type="text" maxlength="1" required>
+                                <input class="input-code" type="text" maxlength="1" required>
+                                <input class="input-code" type="text" maxlength="1" required>
+                                <input class="input-code" type="text" maxlength="1" required>
+                                <input class="input-code" type="text" maxlength="1" required>
+                            </div>
+                            <div class="w-100 d-flex justify-content-center">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#signin" data-bs-whatever="@mdo" class="sendcode w-50 btn-modal my-4">
+                                    Enter code
+                                </a>
                             </div>
                         </div>
                     </form>

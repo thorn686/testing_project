@@ -176,6 +176,18 @@ header .navbar .login {
     top: 25px;
 }
 
+.modal .modal-body .sign-in-link,
+.modal .modal-body .sign-up-link,
+.modal .modal-body .forget-link {
+    text-decoration: none;
+}
+
+.modal .modal-body .sign-in-link:hover,
+.modal .modal-body .sign-up-link:hover,
+.modal .modal-body .forget-link:hover {
+    text-decoration: underline;
+}
+
 .modal .modal-body .back-ward {
     position: absolute;
     left: 20px;
@@ -183,6 +195,24 @@ header .navbar .login {
     text-decoration: none;
     color: var(--color-text);
     font-size: 24px;
+}
+
+.modal .modal-body .sendcode {
+    text-decoration: none;
+    text-align: center;
+}
+
+.modal .input-group .input-code {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-inline: 8px;
+    width: 10%;
+    text-align: center;
+}
+
+.forget-background {
+    background-image: url(/assets/img/forget-p.jpg);
+    background-size: 600px;
 }
 
 
