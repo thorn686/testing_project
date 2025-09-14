@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/assets/icon/css/all.css">
     <link rel="stylesheet" href="/assets/icon/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/assets/css/style.css">
 
 </head>
@@ -50,18 +51,19 @@
                             </li>
                         </ul>
                         <form class="d-flex">
-                            <button class="btn sign-up me-3" data-bs-toggle="modal" data-bs-target="#signup" data-bs-whatever="@mdo" type="button">
+                            <a href="" class="btn sign-up me-3" data-bs-toggle="modal" data-bs-target="#signup" data-bs-whatever="@mdo" type="button">
                                 Sign Up
-                            </button>
-                            <button class="btn login" data-bs-toggle="modal" data-bs-target="#signin" data-bs-whatever="@mdo" type="button">
+                            </a>
+                            <a href="" class="btn login" data-bs-toggle="modal" data-bs-target="#signin" data-bs-whatever="@mdo" type="button">
                                 Login
-                            </button>
+                            </a>
                         </form>
                     </div>
                 </div>
             </nav>
         </div>
     </header>
+    <!-- Sign Up -->
     <div class="modal fade custom-modal" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
             <div class="modal-content">
@@ -98,11 +100,12 @@
                                         <span>Remmeber Me</span>
                                     </span>
                                     <span>
-                                        <a href="" class="sign-in-link" data-bs-toggle="modal" data-bs-target="#signin" data-bs-whatever="@mdo">Sign In</a>
+                                        <a href="" class="sign-in-link" data-bs-toggle="modal" data-bs-target="#signin" data-bs-whatever="@mdo">Log In</a>
                                     </span>
                                 </div>
                                 <div class="w-100 d-flex justify-content-end">
-                                    <button class="btn-modal">Sign Up</button> </div>
+                                    <a href="" class="btn-modal sign-btn" data-bs-toggle="modal" data-bs-target="#new-user" data-bs-whatever="@mdo">Sign Up</a>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -110,6 +113,65 @@
             </div>
         </div>
     </div>
+    <!-- New User -->
+    <div class="modal fade custom-modal" id="new-user" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-6 col-xl-6">
+                            <img class="modal-img" src="/assets/img/w-1.jpg" alt="">
+                        </div>
+                        <div class="col-sm-12 col-lg-6 col-xl-6">
+                            <div class="d-flex justify-content-between">
+                                <h1 class="modal-title">
+                                    Create an Account
+                                </h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <form>
+                                <div class="d-flex">
+                                    <div class="input-group">
+                                        <label for="email" class="py-2">First Name</label>
+                                        <input class="modal-input" type="text" required>
+                                    </div>
+                                    <div class="input-group ms-2">
+                                        <label for="email" class="py-2">Last Name</label>
+                                        <input class="modal-input" type="text" required>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="input-group">
+                                        <label for="email" class="py-2">Date of Birth</label>
+                                        <input class="modal-input" type="date" required>
+                                    </div>
+                                </div>
+                                <div class="w-100 d-flex py-2 justify-content-start my-1">
+                                    <span class="pe-2">Gender</span>
+                                    <span>
+                                        <input type="radio" name="gender">
+                                        <span class="pe-2">Male</span>
+                                    <input type="radio" name="gender">
+                                    <span>Famale</span>
+                                    </span>
+                                </div>
+                                <label class="upload-box">
+                                    <div class="upload-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                                    <div class="upload-text">Upload an Avatar</div>
+                                    <div class="upload-subtitle">Drag and drop Avatar here</div>
+                                    <input type="file" name="fileUpload" id="fileUpload">
+                                </label>
+                                <div class="w-100 d-flex justify-content-end">
+                                    <a href="" class="btn-modal sign-btn">Create Account</a> </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sign In -->
     <div class="modal fade custom-modal" id="signin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
             <div class="modal-content">
@@ -121,7 +183,7 @@
                         <div class="col-sm-12 col-lg-6 col-xl-6">
                             <div class="d-flex justify-content-between">
                                 <h1 class="modal-title">
-                                    Sign In
+                                    Log In
                                 </h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
@@ -144,7 +206,7 @@
                                     </span>
                                 </div>
                                 <div class="w-100 d-flex justify-content-center">
-                                    <button class="btn-modal">Sign In</button>
+                                    <a href="" class="btn-modal sign-btn">Log In</a>
                                 </div>
                                 <p class="d-flex justify-content-center pt-3 pb-0">New user?
                                     <a class="ps-2 sign-in-link" href="" data-bs-toggle="modal" data-bs-target="#signup" data-bs-whatever="@mdo">Sign Up</a></p>
@@ -165,6 +227,7 @@
             </div>
         </div>
     </div>
+    <!-- forget password -->
     <div class="modal fade custom-modal" id="forget-p" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable d-flex justify-content-center">
             <div class="modal-content w-75 forget-background">
@@ -185,7 +248,7 @@
                                 <input class="modal-input" type="email" required placeholder="email@gmail.com" required>
                             </div>
                             <div class="w-100 d-flex justify-content-center">
-                                <a type="button" href="" data-bs-toggle="modal" data-bs-target="#forget-p1" data-bs-whatever="@mdo" class="sendcode w-50 btn-modal my-4">
+                                <a type="button" href="" data-bs-toggle="modal" data-bs-target="#forget-p1" data-bs-whatever="@mdo" class="sign-btn w-50 btn-modal my-4">
                                     Send Code
                                 </a>
                             </div>
@@ -195,6 +258,7 @@
             </div>
         </div>
     </div>
+    <!-- OTP code -->
     <div class="modal fade custom-modal" id="forget-p1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable d-flex justify-content-center">
             <div class="modal-content w-75 forget-background">
@@ -220,7 +284,7 @@
                                 <input class="input-code" type="text" maxlength="1" required>
                             </div>
                             <div class="w-100 d-flex justify-content-center">
-                                <a href="" data-bs-toggle="modal" data-bs-target="#signin" data-bs-whatever="@mdo" class="sendcode w-50 btn-modal my-4">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#signin" data-bs-whatever="@mdo" class="sign-btn w-50 btn-modal my-4">
                                     Enter code
                                 </a>
                             </div>
@@ -257,7 +321,91 @@
                 </div>
             </div>
         </section>
-        <section class="new-main-area bg">
+        <section class="new-main-area">
+            <div class="container">
+                <div class="new-sub-inform">
+                    <div class="row">
+                        <div class="col-sm-6 col-xl-3 my-2">
+                            <div class="card bg-yellow">
+                                <div class="d-flex">
+                                    <div class="card-icon">
+                                        <i class="fa-solid fa-desktop icon-yellow"></i>
+                                    </div>
+                                    <div class="card-contect">
+                                        <div>
+                                            <div class="card-title p-0 m-0">
+                                                10K
+                                            </div>
+                                            <p class="card-text p-0 m-0">
+                                                Online Courses
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-3 my-2">
+                            <div class="card bg-gray">
+                                <div class="d-flex">
+                                    <div class="card-icon">
+                                        <i class="fa-solid fa-user-tie icon-gray"></i>
+                                    </div>
+                                    <div class="card-contect">
+                                        <div>
+                                            <div class="card-title p-0 m-0">
+                                                200 +
+                                            </div>
+                                            <p class="card-text p-0 m-0">
+                                                Expert Tutors
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-3 my-2">
+                            <div class="card bg-purple">
+                                <div class="d-flex">
+                                    <div class="card-icon">
+                                        <i class="fa-solid fa-user-graduate icon-purple"></i>
+                                    </div>
+                                    <div class="card-contect">
+                                        <div>
+                                            <div class="card-title p-0 m-0">
+                                                60K+
+                                            </div>
+                                            <p class="card-text p-0 m-0">
+                                                Online Students
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-3 my-2">
+                            <div class="card bg-yale">
+                                <div class="d-flex">
+                                    <div class="card-icon">
+                                        <i class="fa-solid fa-badge-check icon-yale"></i>
+                                    </div>
+                                    <div class="card-contect">
+                                        <div>
+                                            <div class="card-title p-0 m-0">
+                                                6K+
+                                            </div>
+                                            <p class="card-text p-0 m-0">
+                                                Certified Courses
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="new-main-area">
             <div class="container">
                 <p class="new-main-recommend pt-5">
                     Why Learn with Coding.
@@ -276,7 +424,9 @@
                             </span>
                             <div class="card-body">
                                 <h5 class="card-title">Learn the latest skills</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, lorem consectetur adipiscing elit.</p>
+                                <p class="card-text">
+                                    Learn the last skill that new and fit with the new generation.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -287,7 +437,8 @@
                             </span>
                             <div class="card-body">
                                 <h5 class="card-title">Get ready for a career</h5>
-                                <p class="card-text">Pellentesque eu mi rhoncus, rhoncus tortor a, interdum nisi.
+                                <p class="card-text">
+                                    Start now and get ready for your career that you dream later.
                                 </p>
                             </div>
                         </div>
@@ -300,7 +451,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Earn a Certificate</h5>
                                 <p class="card-text">
-                                    Quisque tempus lectus cursus, imperdiet eros vel, pulvinar arcu.
+                                    Get a certificate after finish all the course that you learn with us.
                                 </p>
                             </div>
                         </div>
@@ -315,8 +466,7 @@
                                     Upskill your organization
                                 </h5>
                                 <p class="card-text">
-                                    Etiam dignissim est tristique ex porta, bibendum commodo.
-
+                                    Upgrade your skill to get the new position that you dream.
                                 </p>
                             </div>
                         </div>
@@ -324,8 +474,138 @@
                 </div>
             </div>
         </section>
+        <section class="new-main-area bg pt-5">
+            <div class="container">
+                <div class="text-start pt-5">
+                    <div class="new-main-type pt-5 pb-2">
+                        Browse Categories
+                    </div>
+                    <div class="new-main-title text-start">
+                        The world's top courses
+                    </div>
+                    <div class="new-main-contect text-start">
+                        Choose from 32,000 online video courses with new additions published every month.
+                    </div>
+                </div>
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>Disabled</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="swiper mySwiper mt-4">
+                            <div class="swiper-wrapper">
+
+                                <!-- HTML -->
+                                <div class="swiper-slide">
+                                    <a class="card-link" href="./education.html">
+                                        <div class="card" style="width: 18rem;">
+                                            <img class="card-img" src="/assets/img/course/html.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Getting start with HTML</h5>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- CSS -->
+                                <div class="swiper-slide">
+                                    <a class="card-link" href="/job.html">
+                                        <div class="card" style="width: 18rem;">
+                                            <img class="card-img" src="/assets/img/course/css.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Getting start with CSS</h5>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- JS -->
+                                <div class="swiper-slide">
+                                    <a class="card-link" href="./scholarship.html">
+                                        <div class="card" style="width: 18rem;">
+                                            <img class="card-img" src="/assets/img/course/js.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Getting start with JAVA Script</h5>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- React -->
+                                <div class="swiper-slide">
+                                    <a class="card-link" href="/social-media.html">
+                                        <div class="card" style="width: 18rem;">
+                                            <img class="card-img" src="/assets/img/course/react.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Getting start with React</h5>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Swiper Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+        const fileInput = document.getElementById("fileUpload");
+
+        fileInput.addEventListener("change", function() {
+            if (fileInput.files.length > 0) {
+                alert("File selected: " + fileInput.files[0].name);
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Swiper JS Config -->
+    <script>
+        var swiper2 = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            slidesPerView: 4,
+            //centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            speed: 1500,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+
+        $('.swiper-slide').hover(function() {
+            swiper2.autoplay.stop();
+        }, function() {
+            swiper2.autoplay.start();
+        });
+    </script>
 </body>
 
 </html>
