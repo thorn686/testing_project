@@ -73,6 +73,10 @@ header .navbar .login {
 
 /* hero-banner */
 
+.hero-banner {
+    margin-top: 40px;
+}
+
 .hero-banner .hero-block {
     height: 100%;
     width: 100%;
@@ -104,34 +108,34 @@ header .navbar .login {
 
 /* sign-up modal */
 
-.custom-modal .modal-dialog {
+.sign-form .custom-modal .modal-dialog {
     max-width: 900px;
 }
 
-.modal .modal-body .modal-img {
+.sign-form .modal .modal-body .modal-img {
     width: 100%;
     height: 100%;
 }
 
-.modal .modal-body .modal-title {
+.sign-form .modal .modal-body .modal-title {
     font-weight: bold;
     font-size: var(--font-size-heading-2);
     color: var(--lg-color);
     padding-bottom: 10px;
 }
 
-.modal .input-group {
+.sign-form .modal .input-group {
     position: relative;
     width: 100%;
 }
 
-.modal .input-group .modal-input {
+.sign-form .modal .input-group .modal-input {
     border: 1px solid #ccc;
     padding: 10px;
     width: 100%;
 }
 
-.modal .input-group .modal-icon {
+.sign-form .modal .input-group .modal-icon {
     position: absolute;
     top: 65%;
     right: 3%;
@@ -140,7 +144,7 @@ header .navbar .login {
     cursor: pointer;
 }
 
-.modal .btn-modal {
+.sign-form .modal .btn-modal {
     border: none;
     background-color: #1560bd;
     color: var(--bg-body-1);
@@ -151,44 +155,44 @@ header .navbar .login {
     width: 100%;
 }
 
-.modal .modal-body .title {
+.sign-form .modal .modal-body .title {
     font-size: var(--font-size-heading-3);
     color: var(--color-text);
     font-weight: 500;
     padding: 0;
 }
 
-.modal .modal-body .other-app-box {
+.sign-form .modal .modal-body .other-app-box {
     width: 100%;
     background-color: #ddd;
     border-radius: 10px;
     padding: 10px;
 }
 
-.modal .modal-body .other-app img {
+.sign-form .modal .modal-body .other-app img {
     width: 40px;
     margin-inline: 10px;
 }
 
-.modal .modal-body .btn-close {
+.sign-form .modal .modal-body .btn-close {
     position: absolute;
     right: 20px;
     top: 25px;
 }
 
-.modal .modal-body .sign-in-link,
-.modal .modal-body .sign-up-link,
-.modal .modal-body .forget-link {
+.sign-form .modal .modal-body .sign-in-link,
+.sign-form .modal .modal-body .sign-up-link,
+.sign-form .modal .modal-body .forget-link {
     text-decoration: none;
 }
 
-.modal .modal-body .sign-in-link:hover,
-.modal .modal-body .sign-up-link:hover,
-.modal .modal-body .forget-link:hover {
+.sign-form .modal .modal-body .sign-in-link:hover,
+.sign-form .modal .modal-body .sign-up-link:hover,
+.sign-form .modal .modal-body .forget-link:hover {
     text-decoration: underline;
 }
 
-.modal .modal-body .back-ward {
+.sign-form .modal .modal-body .back-ward {
     position: absolute;
     left: 20px;
     top: 25px;
@@ -197,12 +201,12 @@ header .navbar .login {
     font-size: 24px;
 }
 
-.modal .modal-body .sendcode {
+.sign-form .modal .modal-body .sign-btn {
     text-decoration: none;
     text-align: center;
 }
 
-.modal .input-group .input-code {
+.sign-form .modal .input-group .input-code {
     border: 1px solid #ccc;
     padding: 10px;
     margin-inline: 8px;
@@ -210,9 +214,113 @@ header .navbar .login {
     text-align: center;
 }
 
-.forget-background {
+.sign-form .forget-background {
     background-image: url(/assets/img/forget-p.jpg);
     background-size: 600px;
+}
+
+.sign-form .modal .modal-body .upload-box {
+    width: 100%;
+    border: 2px dashed gray;
+    border-radius: 10px;
+    padding: 5px 0px 10px 0px;
+    text-align: center;
+    background-color: #f9fafc;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.sign-form .modal .modal-body .upload-box:hover {
+    border-color: #4a90e2;
+}
+
+.sign-form .modal .modal-body .upload-box input {
+    display: none;
+}
+
+.sign-form .modal .modal-body .upload-box .upload-icon {
+    font-size: 36px;
+    color: #999;
+}
+
+.sign-form .modal .modal-body .upload-box .upload-text {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sign-form .modal .modal-body .upload-box .upload-subtitle {
+    font-size: 14px;
+    color: var(--color-text);
+}
+
+
+/* new-sub-inform */
+
+.new-main-area .new-sub-inform {
+    margin-block: 40px;
+}
+
+.new-main-area .new-sub-inform .card {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-main-area .new-sub-inform .card.bg-yellow {
+    background-color: #faefd7;
+}
+
+.new-main-area .new-sub-inform .card .icon-yellow {
+    color: #f5c02f;
+}
+
+.new-main-area .new-sub-inform .card.bg-gray {
+    background-color: #e8ebed;
+}
+
+.new-main-area .new-sub-inform .card .icon-gray {
+    color: #1d3b52;
+}
+
+.new-main-area .new-sub-inform .card.bg-purple {
+    background-color: #f1ebfa;
+}
+
+.new-main-area .new-sub-inform .card .icon-purple {
+    color: #6f42c2;
+}
+
+.new-main-area .new-sub-inform .card.bg-yale {
+    background-color: #ebf5f7;
+}
+
+.new-main-area .new-sub-inform .card .icon-yale {
+    color: #1aa0b8;
+}
+
+.new-main-area .new-sub-inform .card .card-icon {
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.new-main-area .new-sub-inform .card .card-contect {
+    padding-inline-start: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.new-main-area .new-sub-inform .card .card-contect .card-title {
+    font-size: 21px;
+    font-weight: 700;
+    padding: 0;
+}
+
+.new-main-area .new-sub-inform .card .card-contect .card-text {
+    font-size: var(--font-size-heading-3);
+    padding: 0;
 }
 
 
@@ -243,6 +351,7 @@ header .navbar .login {
 
 .new-main-area .new-main-contect {
     padding-bottom: 40px;
+    font-size: var(--font-size-heading-3);
 }
 
 .new-main-area .card {
@@ -253,6 +362,11 @@ header .navbar .login {
 .new-main-area .card .card-icon {
     padding: 20px 0px 0px 15px;
     font-size: var(--font-size-heading-2);
+    color: var(--lg-color);
+}
+
+.new-main-area .new-main-type {
+    text-transform: uppercase;
     color: var(--lg-color);
 }
 

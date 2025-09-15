@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/assets/icon/css/all.css">
     <link rel="stylesheet" href="/assets/icon/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/assets/css/style.css">
 
 </head>
@@ -60,7 +61,7 @@
                             <button class="btn login" data-bs-toggle="modal" data-bs-target="#signin"
                                 data-bs-whatever="@mdo" type="button">
                                 Login
-                            </button>
+                                </a>
                         </form>
                     </div>
                 </div>
@@ -110,142 +111,176 @@
                                     </span>
                                 </div>
                                 <div class="w-100 d-flex justify-content-end">
+                                    <a href="" class="btn-modal sign-btn" data-bs-toggle="modal"
+                                        data-bs-target="#new-user" data-bs-whatever="@mdo">Sign Up</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- New User -->
+    <div class="sign-form">
+        <div class="modal fade custom-modal" id="new-user" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-6 col-xl-6">
+                                <img class="modal-img" src="/assets/img/w-1.jpg" alt="">
+                            </div>
+                            <div class="col-sm-12 col-lg-6 col-xl-6">
+                                <div class="d-flex justify-content-between">
+                                    <h1 class="modal-title">
+                                        Create an Account
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="w-100 d-flex justify-content-end">
                                     <button class="btn-modal">Sign Up</button>
                                 </div>
-                            </form>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="modal fade custom-modal" id="signin" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-sm-12 col-lg-6 col-xl-6">
-                            <img class="modal-img" src="/assets/img/m-6.jpg" alt="">
-                        </div>
-                        <div class="col-sm-12 col-lg-6 col-xl-6">
-                            <div class="d-flex justify-content-between">
-                                <h1 class="modal-title">
-                                    Sign In
-                                </h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
+        <div class="modal fade custom-modal" id="signin" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-6 col-xl-6">
+                                <img class="modal-img" src="/assets/img/m-6.jpg" alt="">
                             </div>
-                            <form>
-                                <div class="input-group">
-                                    <label for="email" class="py-2">Email</label>
-                                    <input class="modal-input " type="email" placeholder="email@gmail.com" required>
+                            <div class="col-sm-12 col-lg-6 col-xl-6">
+                                <div class="d-flex justify-content-between">
+                                    <h1 class="modal-title">
+                                        Sign In
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
                                 </div>
-                                <div class="input-group"><label for="password" class="py-2">Password</label>
-                                    <input class="modal-input" type="password" placeholder="********" required>
-                                    <i class="fa-solid fa-eye-slash modal-icon" id="togglePassword"></i>
-                                </div>
-                                <div class="w-100 d-flex py-2 justify-content-between">
-                                    <span>
-                                        <input type="checkbox" required class="radio">
-                                        <span>Remmeber Me</span>
-                                    </span>
-                                    <span>
-                                        <a class="ps-1 forget-link" href="" data-bs-toggle="modal"
-                                            data-bs-target="#forget-p" data-bs-whatever="@mdo">Forget Password?</a>
-                                    </span>
-                                </div>
-                                <div class="w-100 d-flex justify-content-center">
-                                    <button class="btn-modal">Sign In</button>
-                                </div>
-                                <p class="d-flex justify-content-center pt-3 pb-0">New user?
-                                    <a class="ps-2 sign-in-link" href="" data-bs-toggle="modal" data-bs-target="#signup"
-                                        data-bs-whatever="@mdo">Sign Up</a>
-                                </p>
-                                <div class="other-app-box">
-                                    <p class="d-flex justify-content-center title p-0">Login With</p>
-                                    <div class="d-flex justify-content-center">
-                                        <div class="other-app">
-                                            <img src="/assets/img/logo/facebook.png" alt="">
-                                            <img src="/assets/img/logo/google.png" alt="">
-                                            <img src="/assets/img/logo/github.png" alt="">
+                                <form>
+                                    <div class="input-group">
+                                        <label for="email" class="py-2">Email</label>
+                                        <input class="modal-input " type="email" placeholder="email@gmail.com" required>
+                                    </div>
+                                    <div class="input-group"><label for="password" class="py-2">Password</label>
+                                        <input class="modal-input" type="password" placeholder="********" required>
+                                        <i class="fa-solid fa-eye-slash modal-icon" id="togglePassword"></i>
+                                    </div>
+                                    <div class="w-100 d-flex py-2 justify-content-between">
+                                        <span>
+                                            <input type="checkbox" required class="radio">
+                                            <span>Remmeber Me</span>
+                                        </span>
+                                        <span>
+                                            <a class="ps-1 forget-link" href="" data-bs-toggle="modal"
+                                                data-bs-target="#forget-p" data-bs-whatever="@mdo">Forget Password?</a>
+                                        </span>
+                                    </div>
+                                    <div class="w-100 d-flex justify-content-center">
+                                        <button class="btn-modal">Sign In</button>
+                                    </div>
+                                    <p class="d-flex justify-content-center pt-3 pb-0">New user?
+                                        <a class="ps-2 sign-in-link" href="" data-bs-toggle="modal"
+                                            data-bs-target="#signup" data-bs-whatever="@mdo">Sign Up</a>
+                                    </p>
+                                    <div class="other-app-box">
+                                        <p class="d-flex justify-content-center title p-0">Login With</p>
+                                        <div class="d-flex justify-content-center">
+                                            <div class="other-app">
+                                                <img src="/assets/img/logo/facebook.png" alt="">
+                                                <img src="/assets/img/logo/google.png" alt="">
+                                                <img src="/assets/img/logo/github.png" alt="">
+                                            </div>
                                         </div>
                                     </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade custom-modal" id="forget-p" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable d-flex justify-content-center">
+                <div class="modal-content w-75 forget-background">
+                    <div class="modal-body">
+                        <div class="d-flex">
+                            <h1 class="modal-title d-flex justify-content-center w-100 mt-3">
+                                Forget Password
+                            </h1>
+                            <a href="" data-bs-toggle="modal" data-bs-target="#signin" data-bs-whatever="@mdo"
+                                class="back-ward">
+                                ←
+                            </a>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <p class="text-center">Enter your email to your account. We will send you an (OTP) code.</p>
+                        <form class="d-flex justify-content-center">
+                            <div class="w-75">
+                                <div class="input-group">
+                                    <input class="modal-input" type="email" required placeholder="email@gmail.com"
+                                        required>
                                 </div>
-                            </form>
-                        </div>
+                                <div class="w-100 d-flex justify-content-center">
+                                    <a type="button" href="" data-bs-toggle="modal" data-bs-target="#forget-p1"
+                                        data-bs-whatever="@mdo" class="sendcode w-50 btn-modal my-4">
+                                        Send Code
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="modal fade custom-modal" id="forget-p" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable d-flex justify-content-center">
-            <div class="modal-content w-75 forget-background">
-                <div class="modal-body">
-                    <div class="d-flex">
-                        <h1 class="modal-title d-flex justify-content-center w-100 mt-3">
-                            Forget Password
-                        </h1>
-                        <a href="" data-bs-toggle="modal" data-bs-target="#signin" data-bs-whatever="@mdo"
-                            class="back-ward">
-                            ←
-                        </a>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <p class="text-center">Enter your email to your account. We will send you an (OTP) code.</p>
-                    <form class="d-flex justify-content-center">
-                        <div class="w-75">
-                            <div class="input-group">
-                                <input class="modal-input" type="email" required placeholder="email@gmail.com" required>
-                            </div>
-                            <div class="w-100 d-flex justify-content-center">
-                                <a type="button" href="" data-bs-toggle="modal" data-bs-target="#forget-p1"
-                                    data-bs-whatever="@mdo" class="sendcode w-50 btn-modal my-4">
-                                    Send Code
-                                </a>
-                            </div>
+        <div class="modal fade custom-modal" id="forget-p1" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable d-flex justify-content-center">
+                <div class="modal-content w-75 forget-background">
+                    <div class="modal-body">
+                        <div class="d-flex">
+                            <h1 class="modal-title d-flex justify-content-center w-100 mt-3">
+                                Check Your OTP Code.
+                            </h1>
+                            <a href="" data-bs-toggle="modal" data-bs-target="#forget-p" data-bs-whatever="@mdo"
+                                class="back-ward">
+                                ←
+                            </a>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade custom-modal" id="forget-p1" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable d-flex justify-content-center">
-            <div class="modal-content w-75 forget-background">
-                <div class="modal-body">
-                    <div class="d-flex">
-                        <h1 class="modal-title d-flex justify-content-center w-100 mt-3">
-                            Check Your OTP Code.
-                        </h1>
-                        <a href="" data-bs-toggle="modal" data-bs-target="#forget-p" data-bs-whatever="@mdo"
-                            class="back-ward">
-                            ←
-                        </a>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <p class="text-center">Please check your email for OTP 6 numbers.</p>
+                        <form class="d-flex justify-content-center">
+                            <div class="w-75">
+                                <div class="input-group d-flex justify-content-center">
+                                    <input class="input-code" type="text" maxlength="1" required>
+                                    <input class="input-code" type="text" maxlength="1" required>
+                                    <input class="input-code" type="text" maxlength="1" required>
+                                    <input class="input-code" type="text" maxlength="1" required>
+                                    <input class="input-code" type="text" maxlength="1" required>
+                                    <input class="input-code" type="text" maxlength="1" required>
+                                </div>
+                                <div class="w-100 d-flex justify-content-center">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#signin" data-bs-whatever="@mdo"
+                                        class="sendcode w-50 btn-modal my-4">
+                                        Enter code
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <p class="text-center">Please check your email for OTP 6 numbers.</p>
-                    <form class="d-flex justify-content-center">
-                        <div class="w-75">
-                            <div class="input-group d-flex justify-content-center">
-                                <input class="input-code" type="text" maxlength="1" required>
-                                <input class="input-code" type="text" maxlength="1" required>
-                                <input class="input-code" type="text" maxlength="1" required>
-                                <input class="input-code" type="text" maxlength="1" required>
-                                <input class="input-code" type="text" maxlength="1" required>
-                                <input class="input-code" type="text" maxlength="1" required>
-                            </div>
-                            <div class="w-100 d-flex justify-content-center">
-                                <a href="" data-bs-toggle="modal" data-bs-target="#signin" data-bs-whatever="@mdo"
-                                    class="sendcode w-50 btn-modal my-4">
-                                    Enter code
-                                </a>
-                            </div>
-                        </div>
-                    </form>
                 </div>
             </div>
         </div>
@@ -279,7 +314,91 @@
                 </div>
             </div>
         </section>
-        <section class="new-main-area bg">
+        <section class="new-main-area">
+            <div class="container">
+                <div class="new-sub-inform">
+                    <div class="row">
+                        <div class="col-sm-6 col-xl-3 my-2">
+                            <div class="card bg-yellow">
+                                <div class="d-flex">
+                                    <div class="card-icon">
+                                        <i class="fa-solid fa-desktop icon-yellow"></i>
+                                    </div>
+                                    <div class="card-contect">
+                                        <div>
+                                            <div class="card-title p-0 m-0">
+                                                10K
+                                            </div>
+                                            <p class="card-text p-0 m-0">
+                                                Online Courses
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-3 my-2">
+                            <div class="card bg-gray">
+                                <div class="d-flex">
+                                    <div class="card-icon">
+                                        <i class="fa-solid fa-user-tie icon-gray"></i>
+                                    </div>
+                                    <div class="card-contect">
+                                        <div>
+                                            <div class="card-title p-0 m-0">
+                                                200 +
+                                            </div>
+                                            <p class="card-text p-0 m-0">
+                                                Expert Tutors
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-3 my-2">
+                            <div class="card bg-purple">
+                                <div class="d-flex">
+                                    <div class="card-icon">
+                                        <i class="fa-solid fa-user-graduate icon-purple"></i>
+                                    </div>
+                                    <div class="card-contect">
+                                        <div>
+                                            <div class="card-title p-0 m-0">
+                                                60K+
+                                            </div>
+                                            <p class="card-text p-0 m-0">
+                                                Online Students
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-3 my-2">
+                            <div class="card bg-yale">
+                                <div class="d-flex">
+                                    <div class="card-icon">
+                                        <i class="fa-solid fa-badge-check icon-yale"></i>
+                                    </div>
+                                    <div class="card-contect">
+                                        <div>
+                                            <div class="card-title p-0 m-0">
+                                                6K+
+                                            </div>
+                                            <p class="card-text p-0 m-0">
+                                                Certified Courses
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="new-main-area">
             <div class="container">
                 <p class="new-main-recommend pt-5">
                     Why Learn with Coding.
@@ -299,7 +418,9 @@
                             </span>
                             <div class="card-body">
                                 <h5 class="card-title">Learn the latest skills</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, lorem consectetur adipiscing elit.</p>
+                                <p class="card-text">
+                                    Learn the last skill that new and fit with the new generation.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -310,7 +431,8 @@
                             </span>
                             <div class="card-body">
                                 <h5 class="card-title">Get ready for a career</h5>
-                                <p class="card-text">Pellentesque eu mi rhoncus, rhoncus tortor a, interdum nisi.
+                                <p class="card-text">
+                                    Start now and get ready for your career that you dream later.
                                 </p>
                             </div>
                         </div>
@@ -323,7 +445,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Earn a Certificate</h5>
                                 <p class="card-text">
-                                    Quisque tempus lectus cursus, imperdiet eros vel, pulvinar arcu.
+                                    Get a certificate after finish all the course that you learn with us.
                                 </p>
                             </div>
                         </div>
@@ -338,8 +460,7 @@
                                     Upskill your organization
                                 </h5>
                                 <p class="card-text">
-                                    Etiam dignissim est tristique ex porta, bibendum commodo.
-
+                                    Upgrade your skill to get the new position that you dream.
                                 </p>
                             </div>
                         </div>
@@ -347,7 +468,6 @@
                 </div>
             </div>
         </section>
-
         <!-- Instructors -->
 
         <section class="instructors">
@@ -478,9 +598,48 @@
                 </div>
             </div>
         </section>
-
     </main>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+        const fileInput = document.getElementById("fileUpload");
+
+        fileInput.addEventListener("change", function () {
+            if (fileInput.files.length > 0) {
+                alert("File selected: " + fileInput.files[0].name);
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Swiper JS Config -->
+    <script>
+        var swiper2 = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            slidesPerView: 4,
+            //centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            speed: 1500,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+
+        $('.swiper-slide').hover(function () {
+            swiper2.autoplay.stop();
+        }, function () {
+            swiper2.autoplay.start();
+        });
+    </script>
 </body>
 
 </html>
