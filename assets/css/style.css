@@ -108,34 +108,34 @@ header .navbar .login {
 
 /* sign-up modal */
 
-.custom-modal .modal-dialog {
+.sign-form .custom-modal .modal-dialog {
     max-width: 900px;
 }
 
-.modal .modal-body .modal-img {
+.sign-form .modal .modal-body .modal-img {
     width: 100%;
     height: 100%;
 }
 
-.modal .modal-body .modal-title {
+.sign-form .modal .modal-body .modal-title {
     font-weight: bold;
     font-size: var(--font-size-heading-2);
     color: var(--lg-color);
     padding-bottom: 10px;
 }
 
-.modal .input-group {
+.sign-form .modal .input-group {
     position: relative;
     width: 100%;
 }
 
-.modal .input-group .modal-input {
+.sign-form .modal .input-group .modal-input {
     border: 1px solid #ccc;
     padding: 10px;
     width: 100%;
 }
 
-.modal .input-group .modal-icon {
+.sign-form .modal .input-group .modal-icon {
     position: absolute;
     top: 65%;
     right: 3%;
@@ -144,7 +144,7 @@ header .navbar .login {
     cursor: pointer;
 }
 
-.modal .btn-modal {
+.sign-form .modal .btn-modal {
     border: none;
     background-color: #1560bd;
     color: var(--bg-body-1);
@@ -155,44 +155,44 @@ header .navbar .login {
     width: 100%;
 }
 
-.modal .modal-body .title {
+.sign-form .modal .modal-body .title {
     font-size: var(--font-size-heading-3);
     color: var(--color-text);
     font-weight: 500;
     padding: 0;
 }
 
-.modal .modal-body .other-app-box {
+.sign-form .modal .modal-body .other-app-box {
     width: 100%;
     background-color: #ddd;
     border-radius: 10px;
     padding: 10px;
 }
 
-.modal .modal-body .other-app img {
+.sign-form .modal .modal-body .other-app img {
     width: 40px;
     margin-inline: 10px;
 }
 
-.modal .modal-body .btn-close {
+.sign-form .modal .modal-body .btn-close {
     position: absolute;
     right: 20px;
     top: 25px;
 }
 
-.modal .modal-body .sign-in-link,
-.modal .modal-body .sign-up-link,
-.modal .modal-body .forget-link {
+.sign-form .modal .modal-body .sign-in-link,
+.sign-form .modal .modal-body .sign-up-link,
+.sign-form .modal .modal-body .forget-link {
     text-decoration: none;
 }
 
-.modal .modal-body .sign-in-link:hover,
-.modal .modal-body .sign-up-link:hover,
-.modal .modal-body .forget-link:hover {
+.sign-form .modal .modal-body .sign-in-link:hover,
+.sign-form .modal .modal-body .sign-up-link:hover,
+.sign-form .modal .modal-body .forget-link:hover {
     text-decoration: underline;
 }
 
-.modal .modal-body .back-ward {
+.sign-form .modal .modal-body .back-ward {
     position: absolute;
     left: 20px;
     top: 25px;
@@ -201,12 +201,12 @@ header .navbar .login {
     font-size: 24px;
 }
 
-.modal .modal-body .sign-btn {
+.sign-form .modal .modal-body .sign-btn {
     text-decoration: none;
     text-align: center;
 }
 
-.modal .input-group .input-code {
+.sign-form .modal .input-group .input-code {
     border: 1px solid #ccc;
     padding: 10px;
     margin-inline: 8px;
@@ -214,12 +214,12 @@ header .navbar .login {
     text-align: center;
 }
 
-.forget-background {
+.sign-form .forget-background {
     background-image: url(/assets/img/forget-p.jpg);
     background-size: 600px;
 }
 
-.modal .modal-body .upload-box {
+.sign-form .modal .modal-body .upload-box {
     width: 100%;
     border: 2px dashed gray;
     border-radius: 10px;
@@ -230,25 +230,25 @@ header .navbar .login {
     transition: border-color 0.3s ease;
 }
 
-.modal .modal-body .upload-box:hover {
+.sign-form .modal .modal-body .upload-box:hover {
     border-color: #4a90e2;
 }
 
-.modal .modal-body .upload-box input {
+.sign-form .modal .modal-body .upload-box input {
     display: none;
 }
 
-.modal .modal-body .upload-box .upload-icon {
+.sign-form .modal .modal-body .upload-box .upload-icon {
     font-size: 36px;
     color: #999;
 }
 
-.modal .modal-body .upload-box .upload-text {
+.sign-form .modal .modal-body .upload-box .upload-text {
     font-size: 16px;
     font-weight: 500;
 }
 
-.modal .modal-body .upload-box .upload-subtitle {
+.sign-form .modal .modal-body .upload-box .upload-subtitle {
     font-size: 14px;
     color: var(--color-text);
 }
@@ -374,4 +374,51 @@ header .navbar .login {
     font-weight: 600;
     padding-bottom: 1px;
     font-size: var(--font-size-subtitle);
+}
+
+
+/* category section */
+
+.category-section .card-link {
+    text-decoration: none;
+}
+
+.category-section .card-link .card {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.category-section .card-link .card .card-img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.category-section .card-link .card .card-text {
+    font-size: var(--font-size-heading-3);
+    font-weight: 600;
+    color: var(--color-title);
+}
+
+.category-section .card-link .card .card-contect {
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.category-section .card-link .card .card-recommade i {
+    color: #f59f0a;
+    padding-right: 10px;
+}
+
+.category-section .card-link .card .card-teacher .card-profile {
+    width: 50px;
+    height: 50px;
+}
+
+.category-section .card-link .card .card-teacher .card-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
 }
