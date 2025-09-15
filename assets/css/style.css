@@ -261,3 +261,52 @@ header .navbar .login {
     padding-bottom: 1px;
     font-size: var(--font-size-subtitle);
 }
+
+/* Instructor */
+
+.instructors .header-section{
+    text-align: center;
+}
+.instructors .header-section h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.instructors .header-section .header-top{
+    text-transform: uppercase;
+    font-size: var(--font-size-text);
+    color: var(--lg-color);
+    font-weight: bold;
+}
+.instructors .header-section .header-buttom{
+    font-size: 19px;
+    font-weight: 500;
+    color:#4b5563;
+    
+}
+
+.card-instru .card .card-img img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+.card-instru .card .card-body .instru-name h4{
+    color: #2f3236;
+    cursor: pointer;
+    transition: .3s;
+}
+.card-instru .card .card-body .instru-name:hover h4{
+    color: #1560bd;
+}
+.btn{
+    font-size: 16px;
+    padding: 10px 15px;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    background-color: #1560bd;
+    transition: .3s;
+}
+.btn:hover{
+    color: #fff;
+    background-color: #0561d2;
+}
