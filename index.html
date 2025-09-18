@@ -21,9 +21,7 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <a class="navbar-brand fw-bold fs-2" href="#"><img src="./assets/img/logo/logo.png" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -32,8 +30,7 @@
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Lessons
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -54,12 +51,10 @@
                             </li>
                         </ul>
                         <form class="d-flex">
-                            <button class="btn sign-up me-3" data-bs-toggle="modal" data-bs-target="#signup"
-                                data-bs-whatever="@mdo" type="button">
+                            <button class="btn sign-up me-3" data-bs-toggle="modal" data-bs-target="#signup" data-bs-whatever="@mdo" type="button">
                                 Sign Up
                             </button>
-                            <button class="btn login" data-bs-toggle="modal" data-bs-target="#signin"
-                                data-bs-whatever="@mdo" type="button">
+                            <button class="btn login" data-bs-toggle="modal" data-bs-target="#signin" data-bs-whatever="@mdo" type="button">
                                 Login
                                 </a>
                         </form>
@@ -85,34 +80,186 @@
                                 </h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
-                            </div>
-                            <form>
-                                <div class="input-group">
-                                    <label for="email" class="py-2">Email</label>
-                                    <input class="modal-input " type="email" placeholder="email@gmail.com" required>
-                                </div>
-                                <div class="input-group"><label for="password" class="py-2">Password</label>
-                                    <input class="modal-input" type="password" placeholder="********" required>
-                                    <i class="fa-solid fa-eye-slash modal-icon" id="togglePassword"></i>
-                                </div>
-                                <div class="input-group">
-                                    <label for="confirm Password" class="py-2">Conform Password</label>
-                                    <input class="modal-input" type="password" placeholder="********" required>
-                                    <i class="fa-solid fa-eye-slash modal-icon" id="togglePassword"></i>
-                                </div>
-                                <div class="w-100 d-flex py-2 justify-content-between">
-                                    <span>
+                    </div>
+                    <form>
+                        <div class="input-group">
+                            <label for="email" class="py-2">Email</label>
+                            <input class="modal-input " type="email" placeholder="email@gmail.com" required>
+                        </div>
+                        <div class="input-group"><label for="password" class="py-2">Password</label>
+                            <input class="modal-input" type="password" placeholder="********" required>
+                            <i class="fa-solid fa-eye-slash modal-icon" id="togglePassword"></i>
+                        </div>
+                        <div class="input-group">
+                            <label for="confirm Password" class="py-2">Conform Password</label>
+                            <input class="modal-input" type="password" placeholder="********" required>
+                            <i class="fa-solid fa-eye-slash modal-icon" id="togglePassword"></i>
+                        </div>
+                        <div class="w-100 d-flex py-2 justify-content-between">
+                            <span>
                                         <input type="checkbox" class="radio">
                                         <span>Remmeber Me</span>
-                                    </span>
-                                    <span>
+                            </span>
+                            <span>
                                         <a href="" class="sign-in-link" data-bs-toggle="modal" data-bs-target="#signin"
                                             data-bs-whatever="@mdo">Sign In</a>
                                     </span>
+                        </div>
+                        <div class="w-100 d-flex justify-content-end">
+                            <a href="" class="btn-modal sign-btn" data-bs-toggle="modal" data-bs-target="#new-user" data-bs-whatever="@mdo">Sign Up</a>
+                        </div>
+                    </form>
+                </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <!-- New User -->
+        <div class="sign-form">
+            <div class="modal fade custom-modal" id="new-user" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
+                    <div class="modal-content">
+
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-6 col-xl-6">
+                                    <img class="modal-img" src="/assets/img/w-1.jpg" alt="">
                                 </div>
-                                <div class="w-100 d-flex justify-content-end">
-                                    <a href="" class="btn-modal sign-btn" data-bs-toggle="modal"
-                                        data-bs-target="#new-user" data-bs-whatever="@mdo">Sign Up</a>
+                                <div class="col-sm-12 col-lg-6 col-xl-6">
+                                    <div class="d-flex justify-content-between">
+                                        <h1 class="modal-title">
+                                            Create an Account
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="w-100 d-flex justify-content-end">
+                                        <button class="btn-modal">Sign Up</button>
+                                    </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade custom-modal" id="signin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-6 col-xl-6">
+                                    <img class="modal-img" src="/assets/img/m-6.jpg" alt="">
+                                </div>
+                                <div class="col-sm-12 col-lg-6 col-xl-6">
+                                    <div class="d-flex justify-content-between">
+                                        <h1 class="modal-title">
+                                            Sign In
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <form>
+                                        <div class="input-group">
+                                            <label for="email" class="py-2">Email</label>
+                                            <input class="modal-input " type="email" placeholder="email@gmail.com" required>
+                                        </div>
+                                        <div class="input-group"><label for="password" class="py-2">Password</label>
+                                            <input class="modal-input" type="password" placeholder="********" required>
+                                            <i class="fa-solid fa-eye-slash modal-icon" id="togglePassword"></i>
+                                        </div>
+                                        <div class="w-100 d-flex py-2 justify-content-between">
+                                            <span>
+                                            <input type="checkbox" required class="radio">
+                                            <span>Remmeber Me</span>
+                                            </span>
+                                            <span>
+                                            <a class="ps-1 forget-link" href="" data-bs-toggle="modal"
+                                                data-bs-target="#forget-p" data-bs-whatever="@mdo">Forget Password?</a>
+                                        </span>
+                                        </div>
+                                        <div class="w-100 d-flex justify-content-center">
+                                            <button class="btn-modal">Sign In</button>
+                                        </div>
+                                        <p class="d-flex justify-content-center pt-3 pb-0">New user?
+                                            <a class="ps-2 sign-in-link" href="" data-bs-toggle="modal" data-bs-target="#signup" data-bs-whatever="@mdo">Sign Up</a>
+                                        </p>
+                                        <div class="other-app-box">
+                                            <p class="d-flex justify-content-center title p-0">Login With</p>
+                                            <div class="d-flex justify-content-center">
+                                                <div class="other-app">
+                                                    <img src="/assets/img/logo/facebook.png" alt="">
+                                                    <img src="/assets/img/logo/google.png" alt="">
+                                                    <img src="/assets/img/logo/github.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade custom-modal" id="forget-p" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable d-flex justify-content-center">
+                    <div class="modal-content w-75 forget-background">
+                        <div class="modal-body">
+                            <div class="d-flex">
+                                <h1 class="modal-title d-flex justify-content-center w-100 mt-3">
+                                    Forget Password
+                                </h1>
+                                <a href="" data-bs-toggle="modal" data-bs-target="#signin" data-bs-whatever="@mdo" class="back-ward">
+                                ←
+                            </a>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <p class="text-center">Enter your email to your account. We will send you an (OTP) code.</p>
+                            <form class="d-flex justify-content-center">
+                                <div class="w-75">
+                                    <div class="input-group">
+                                        <input class="modal-input" type="email" required placeholder="email@gmail.com" required>
+                                    </div>
+                                    <div class="w-100 d-flex justify-content-center">
+                                        <a type="button" href="" data-bs-toggle="modal" data-bs-target="#forget-p1" data-bs-whatever="@mdo" class="sendcode w-50 btn-modal my-4">
+                                        Send Code
+                                    </a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade custom-modal" id="forget-p1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable d-flex justify-content-center">
+                    <div class="modal-content w-75 forget-background">
+                        <div class="modal-body">
+                            <div class="d-flex">
+                                <h1 class="modal-title d-flex justify-content-center w-100 mt-3">
+                                    Check Your OTP Code.
+                                </h1>
+                                <a href="" data-bs-toggle="modal" data-bs-target="#forget-p" data-bs-whatever="@mdo" class="back-ward">
+                                ←
+                            </a>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <p class="text-center">Please check your email for OTP 6 numbers.</p>
+                            <form class="d-flex justify-content-center">
+                                <div class="w-75">
+                                    <div class="input-group d-flex justify-content-center">
+                                        <input class="input-code" type="text" maxlength="1" required>
+                                        <input class="input-code" type="text" maxlength="1" required>
+                                        <input class="input-code" type="text" maxlength="1" required>
+                                        <input class="input-code" type="text" maxlength="1" required>
+                                        <input class="input-code" type="text" maxlength="1" required>
+                                        <input class="input-code" type="text" maxlength="1" required>
+                                    </div>
+                                    <div class="w-100 d-flex justify-content-center">
+                                        <a href="" data-bs-toggle="modal" data-bs-target="#signin" data-bs-whatever="@mdo" class="sendcode w-50 btn-modal my-4">
+                                        Enter code
+                                    </a>
+                                    </div>
                                 </div>
                             </form>
                         </div>
@@ -120,275 +267,110 @@
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    <!-- New User -->
-    <div class="sign-form">
-        <div class="modal fade custom-modal" id="new-user" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
-                <div class="modal-content">
-
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-sm-12 col-lg-6 col-xl-6">
-                                <img class="modal-img" src="/assets/img/w-1.jpg" alt="">
-                            </div>
-                            <div class="col-sm-12 col-lg-6 col-xl-6">
-                                <div class="d-flex justify-content-between">
-                                    <h1 class="modal-title">
-                                        Create an Account
-                                    </h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="w-100 d-flex justify-content-end">
-                                    <button class="btn-modal">Sign Up</button>
-                                </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade custom-modal" id="signin" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-sm-12 col-lg-6 col-xl-6">
-                                <img class="modal-img" src="/assets/img/m-6.jpg" alt="">
-                            </div>
-                            <div class="col-sm-12 col-lg-6 col-xl-6">
-                                <div class="d-flex justify-content-between">
-                                    <h1 class="modal-title">
-                                        Sign In
-                                    </h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <form>
-                                    <div class="input-group">
-                                        <label for="email" class="py-2">Email</label>
-                                        <input class="modal-input " type="email" placeholder="email@gmail.com" required>
-                                    </div>
-                                    <div class="input-group"><label for="password" class="py-2">Password</label>
-                                        <input class="modal-input" type="password" placeholder="********" required>
-                                        <i class="fa-solid fa-eye-slash modal-icon" id="togglePassword"></i>
-                                    </div>
-                                    <div class="w-100 d-flex py-2 justify-content-between">
-                                        <span>
-                                            <input type="checkbox" required class="radio">
-                                            <span>Remmeber Me</span>
-                                        </span>
-                                        <span>
-                                            <a class="ps-1 forget-link" href="" data-bs-toggle="modal"
-                                                data-bs-target="#forget-p" data-bs-whatever="@mdo">Forget Password?</a>
-                                        </span>
-                                    </div>
-                                    <div class="w-100 d-flex justify-content-center">
-                                        <button class="btn-modal">Sign In</button>
-                                    </div>
-                                    <p class="d-flex justify-content-center pt-3 pb-0">New user?
-                                        <a class="ps-2 sign-in-link" href="" data-bs-toggle="modal"
-                                            data-bs-target="#signup" data-bs-whatever="@mdo">Sign Up</a>
-                                    </p>
-                                    <div class="other-app-box">
-                                        <p class="d-flex justify-content-center title p-0">Login With</p>
-                                        <div class="d-flex justify-content-center">
-                                            <div class="other-app">
-                                                <img src="/assets/img/logo/facebook.png" alt="">
-                                                <img src="/assets/img/logo/google.png" alt="">
-                                                <img src="/assets/img/logo/github.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade custom-modal" id="forget-p" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable d-flex justify-content-center">
-                <div class="modal-content w-75 forget-background">
-                    <div class="modal-body">
-                        <div class="d-flex">
-                            <h1 class="modal-title d-flex justify-content-center w-100 mt-3">
-                                Forget Password
-                            </h1>
-                            <a href="" data-bs-toggle="modal" data-bs-target="#signin" data-bs-whatever="@mdo"
-                                class="back-ward">
-                                ←
-                            </a>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <p class="text-center">Enter your email to your account. We will send you an (OTP) code.</p>
-                        <form class="d-flex justify-content-center">
-                            <div class="w-75">
-                                <div class="input-group">
-                                    <input class="modal-input" type="email" required placeholder="email@gmail.com"
-                                        required>
-                                </div>
-                                <div class="w-100 d-flex justify-content-center">
-                                    <a type="button" href="" data-bs-toggle="modal" data-bs-target="#forget-p1"
-                                        data-bs-whatever="@mdo" class="sendcode w-50 btn-modal my-4">
-                                        Send Code
-                                    </a>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade custom-modal" id="forget-p1" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable d-flex justify-content-center">
-                <div class="modal-content w-75 forget-background">
-                    <div class="modal-body">
-                        <div class="d-flex">
-                            <h1 class="modal-title d-flex justify-content-center w-100 mt-3">
-                                Check Your OTP Code.
-                            </h1>
-                            <a href="" data-bs-toggle="modal" data-bs-target="#forget-p" data-bs-whatever="@mdo"
-                                class="back-ward">
-                                ←
-                            </a>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <p class="text-center">Please check your email for OTP 6 numbers.</p>
-                        <form class="d-flex justify-content-center">
-                            <div class="w-75">
-                                <div class="input-group d-flex justify-content-center">
-                                    <input class="input-code" type="text" maxlength="1" required>
-                                    <input class="input-code" type="text" maxlength="1" required>
-                                    <input class="input-code" type="text" maxlength="1" required>
-                                    <input class="input-code" type="text" maxlength="1" required>
-                                    <input class="input-code" type="text" maxlength="1" required>
-                                    <input class="input-code" type="text" maxlength="1" required>
-                                </div>
-                                <div class="w-100 d-flex justify-content-center">
-                                    <a href="" data-bs-toggle="modal" data-bs-target="#signin" data-bs-whatever="@mdo"
-                                        class="sendcode w-50 btn-modal my-4">
-                                        Enter code
-                                    </a>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <main>
-        <section class="hero-banner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-lg-6 col-xl-6">
-                        <div class="hero-block">
-                            <div class="hero-contect">
-                                <h1>
-                                    Limitless learning at<br> your <span>fingertips</span>
-                                </h1>
-                                <p>
-                                    Online learning and teaching marketplace with 5K+ courses & 10M students. Taught by
-                                    experts to help you acquire new skills.
-                                </p>
-                                <div class="d-flex">
-                                    <p><span><i class="fa-solid fa-badge-check"></i></span> Learn with experts</p>
-                                    <p class="mx-3"><span><i class="fa-solid fa-badge-check"></i></span> Get certificate
-                                    </p>
-                                    <p><span><i class="fa-solid fa-badge-check"></i></span> Get membership</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-lg-6 col-xl-6">
-                        <img class="hero-img" src="/assets/img/m-5.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="new-main-area">
-            <div class="container">
-                <div class="new-sub-inform">
+        <main>
+            <section class="hero-banner">
+                <div class="container">
                     <div class="row">
-                        <div class="col-sm-6 col-xl-3 my-2">
-                            <div class="card bg-yellow">
-                                <div class="d-flex">
-                                    <div class="card-icon">
-                                        <i class="fa-solid fa-desktop icon-yellow"></i>
-                                    </div>
-                                    <div class="card-contect">
-                                        <div>
-                                            <div class="card-title p-0 m-0">
-                                                10K
-                                            </div>
-                                            <p class="card-text p-0 m-0">
-                                                Online Courses
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-xl-3 my-2">
-                            <div class="card bg-gray">
-                                <div class="d-flex">
-                                    <div class="card-icon">
-                                        <i class="fa-solid fa-user-tie icon-gray"></i>
-                                    </div>
-                                    <div class="card-contect">
-                                        <div>
-                                            <div class="card-title p-0 m-0">
-                                                200 +
-                                            </div>
-                                            <p class="card-text p-0 m-0">
-                                                Expert Tutors
-                                            </p>
-                                        </div>
+                        <div class="col-sm-12 col-lg-6 col-xl-6">
+                            <div class="hero-block">
+                                <div class="hero-contect">
+                                    <h1>
+                                        Limitless learning at<br> your <span>fingertips</span>
+                                    </h1>
+                                    <p>
+                                        Online learning and teaching marketplace with 5K+ courses & 10M students. Taught by experts to help you acquire new skills.
+                                    </p>
+                                    <div class="d-flex">
+                                        <p><span><i class="fa-solid fa-badge-check"></i></span> Learn with experts</p>
+                                        <p class="mx-3"><span><i class="fa-solid fa-badge-check"></i></span> Get certificate
+                                        </p>
+                                        <p><span><i class="fa-solid fa-badge-check"></i></span> Get membership</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-xl-3 my-2">
-                            <div class="card bg-purple">
-                                <div class="d-flex">
-                                    <div class="card-icon">
-                                        <i class="fa-solid fa-user-graduate icon-purple"></i>
-                                    </div>
-                                    <div class="card-contect">
-                                        <div>
-                                            <div class="card-title p-0 m-0">
-                                                60K+
+                        <div class="col-sm-12 col-lg-6 col-xl-6">
+                            <img class="hero-img" src="/assets/img/m-5.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="new-main-area">
+                <div class="container">
+                    <div class="new-sub-inform">
+                        <div class="row">
+                            <div class="col-sm-6 col-xl-3 my-2">
+                                <div class="card bg-yellow">
+                                    <div class="d-flex">
+                                        <div class="card-icon">
+                                            <i class="fa-solid fa-desktop icon-yellow"></i>
+                                        </div>
+                                        <div class="card-contect">
+                                            <div>
+                                                <div class="card-title p-0 m-0">
+                                                    10K
+                                                </div>
+                                                <p class="card-text p-0 m-0">
+                                                    Online Courses
+                                                </p>
                                             </div>
-                                            <p class="card-text p-0 m-0">
-                                                Online Students
-                                            </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-sm-6 col-xl-3 my-2">
-                            <div class="card bg-yale">
-                                <div class="d-flex">
-                                    <div class="card-icon">
-                                        <i class="fa-solid fa-badge-check icon-yale"></i>
-                                    </div>
-                                    <div class="card-contect">
-                                        <div>
-                                            <div class="card-title p-0 m-0">
-                                                6K+
+                            <div class="col-sm-6 col-xl-3 my-2">
+                                <div class="card bg-gray">
+                                    <div class="d-flex">
+                                        <div class="card-icon">
+                                            <i class="fa-solid fa-user-tie icon-gray"></i>
+                                        </div>
+                                        <div class="card-contect">
+                                            <div>
+                                                <div class="card-title p-0 m-0">
+                                                    200 +
+                                                </div>
+                                                <p class="card-text p-0 m-0">
+                                                    Expert Tutors
+                                                </p>
                                             </div>
-                                            <p class="card-text p-0 m-0">
-                                                Certified Courses
-                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-xl-3 my-2">
+                                <div class="card bg-purple">
+                                    <div class="d-flex">
+                                        <div class="card-icon">
+                                            <i class="fa-solid fa-user-graduate icon-purple"></i>
+                                        </div>
+                                        <div class="card-contect">
+                                            <div>
+                                                <div class="card-title p-0 m-0">
+                                                    60K+
+                                                </div>
+                                                <p class="card-text p-0 m-0">
+                                                    Online Students
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-xl-3 my-2">
+                                <div class="card bg-yale">
+                                    <div class="d-flex">
+                                        <div class="card-icon">
+                                            <i class="fa-solid fa-badge-check icon-yale"></i>
+                                        </div>
+                                        <div class="card-contect">
+                                            <div>
+                                                <div class="card-title p-0 m-0">
+                                                    6K+
+                                                </div>
+                                                <p class="card-text p-0 m-0">
+                                                    Certified Courses
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -396,224 +378,632 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="new-main-area">
-            <div class="container">
-                <p class="new-main-recommend pt-5">
-                    Why Learn with Coding.
-                </p>
-                <h1 class="new-main-title">
-                    Build better skills,faster
-                </h1>
-                <p class="new-main-contect pt-2">
-                    Explore new skills, deepen existing passions, and get lost in creativity.<br> What you find just
-                    might surprise and inspire you.
-                </p>
-                <div class="row">
-                    <div class="col-ms-12 col-md-6 col-xl-3">
-                        <div class="card">
-                            <span class="card-icon">
+            </section>
+            <section class="new-main-area">
+                <div class="container">
+                    <p class="new-main-recommend pt-5">
+                        Why Learn with Coding.
+                    </p>
+                    <h1 class="new-main-title">
+                        Build better skills,faster
+                    </h1>
+                    <p class="new-main-contect pt-2">
+                        Explore new skills, deepen existing passions, and get lost in creativity.<br> What you find just might surprise and inspire you.
+                    </p>
+                    <div class="row">
+                        <div class="col-ms-12 col-md-6 col-xl-3">
+                            <div class="card">
+                                <span class="card-icon">
                                 <i class="fa-regular fa-gear"></i>
                             </span>
-                            <div class="card-body">
-                                <h5 class="card-title">Learn the latest skills</h5>
-                                <p class="card-text">
-                                    Learn the last skill that new and fit with the new generation.
-                                </p>
+                                <div class="card-body">
+                                    <h5 class="card-title">Learn the latest skills</h5>
+                                    <p class="card-text">
+                                        Learn the last skill that new and fit with the new generation.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-ms-12 col-md-6 col-xl-3">
-                        <div class="card">
-                            <span class="card-icon">
+                        <div class="col-ms-12 col-md-6 col-xl-3">
+                            <div class="card">
+                                <span class="card-icon">
                                 <i class="fa-regular fa-user"></i>
                             </span>
-                            <div class="card-body">
-                                <h5 class="card-title">Get ready for a career</h5>
-                                <p class="card-text">
-                                    Start now and get ready for your career that you dream later.
-                                </p>
+                                <div class="card-body">
+                                    <h5 class="card-title">Get ready for a career</h5>
+                                    <p class="card-text">
+                                        Start now and get ready for your career that you dream later.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-ms-12 col-md-6 col-xl-3">
-                        <div class="card">
-                            <span class="card-icon">
+                        <div class="col-ms-12 col-md-6 col-xl-3">
+                            <div class="card">
+                                <span class="card-icon">
                                 <i class="fa-regular fa-medal"></i>
                             </span>
-                            <div class="card-body">
-                                <h5 class="card-title">Earn a Certificate</h5>
-                                <p class="card-text">
-                                    Get a certificate after finish all the course that you learn with us.
-                                </p>
+                                <div class="card-body">
+                                    <h5 class="card-title">Earn a Certificate</h5>
+                                    <p class="card-text">
+                                        Get a certificate after finish all the course that you learn with us.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-ms-12 col-md-6 col-xl-3">
-                        <div class="card">
-                            <span class="card-icon">
+                        <div class="col-ms-12 col-md-6 col-xl-3">
+                            <div class="card">
+                                <span class="card-icon">
                                 <i class="fa-light fa-users"></i>
                             </span>
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    Upskill your organization
-                                </h5>
-                                <p class="card-text">
-                                    Upgrade your skill to get the new position that you dream.
-                                </p>
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Upskill your organization
+                                    </h5>
+                                    <p class="card-text">
+                                        Upgrade your skill to get the new position that you dream.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- Instructors -->
+            </section>
+            <!-- Instructors -->
 
-        <section class="instructors">
-            <div class="container">
-                <div class="header-section mt-5">
-                    <p class="header-top m-0">World - class Instructors</p>
-                    <h2 class="pt-3 pb-1">Classes Taught by Industry Expert</h2>
-                    <p class="header-buttom m-0">Geeks teachers are icons, experts, and industry rock stars excited to
-                        share
-                        their experience, <br> wisdom,
-                        and trusted tools with you.
-                    </p>
-                </div>
-                <div class="card-instru">
-                    <div class="row mt-5">
-                        <div class="col-3">
-                            <div class="card ">
-                                <div class="card-img">
-                                    <img src="/assets/img/instructor/instructor-img-1.jpg" alt="">
+            <section class="instructors">
+                <div class="container">
+                    <div class="header-section mt-5">
+                        <p class="header-top m-0">World - class Instructors</p>
+                        <h2 class="pt-3 pb-1">Classes Taught by Industry Expert</h2>
+                        <p class="header-buttom m-0">Geeks teachers are icons, experts, and industry rock stars excited to share their experience, <br> wisdom, and trusted tools with you.
+                        </p>
+                    </div>
+                    <div class="card-instru">
+                        <div class="row mt-5">
+                            <div class="col-3">
+                                <div class="card ">
+                                    <div class="card-img">
+                                        <img src="/assets/img/instructor/instructor-img-1.jpg" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="instru-name">
+                                            <h4 class="m-0 pb-1">Mary Roberts</h4>
+                                            <p class="m-0 pb-3" style="color: #4b5563;">Professional Web Developer</p>
+                                        </div>
+                                        <div class="instru-rating d-flex justify-content-between ">
+                                            <div style="color: #f4b100;" class=" p-0">
+                                                <i class="fa-solid fa-star"></i>
+                                                <span>4.5</span>
+                                            </div>
+                                            <div class="">
+                                                <span style="color: #2e3237;">9,692</span> <span style="color: #666;">Students</span>
+                                            </div>
+                                            <div class="p-0">
+                                                <span style="color: #2e3237;"> 3 </span>
+                                                <span style="color: #666;">Course</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="instru-name">
-                                        <h4 class="m-0 pb-1">Mary Roberts</h4>
-                                        <p class="m-0 pb-3" style="color: #4b5563;">Professional Web Developer</p>
+                            </div>
+                            <div class="col-3">
+                                <div class="card ">
+                                    <div class="card-img">
+                                        <img src="/assets/img/instructor/instructor-img-2.jpg" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="instru-name">
+                                            <h4 class="m-0 pb-1" ">Esther Howard</h4>
+                                        <p class=" m-0 pb-3 " style="color: #4b5563; ">Developer of Bootcamp</p>
                                     </div>
                                     <div class="instru-rating d-flex justify-content-between ">
-                                        <div style="color: #f4b100;" class=" p-0">
-                                            <i class="fa-solid fa-star"></i>
+                                        <div style="color: #f4b100; " class=" p-0 ">
+                                            <i class="fa-solid fa-star "></i>
                                             <span>4.5</span>
                                         </div>
-                                        <div class="">
-                                            <span style="color: #2e3237;">9,692</span> <span
-                                                style="color: #666;">Students</span>
+                                        <div class=" ">
+                                            <span style="color: #2e3237; ">5,128</span> <span
+                                                style="color: #666; ">Students</span>
                                         </div>
-                                        <div class="p-0">
-                                            <span style="color: #2e3237;"> 3 </span>
-                                            <span style="color: #666;">Course</span>
+                                        <div class="p-0 ">
+                                            <span style="color: #2e3237; "> 5 </span>
+                                            <span style="color: #666; ">Course</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 ">
                             <div class="card ">
-                                <div class="card-img">
-                                    <img src="/assets/img/instructor/instructor-img-2.jpg" alt="">
+                                <div class="card-img ">
+                                    <img src="/assets/img/instructor/instructor-img-3.jpg " alt=" ">
                                 </div>
-                                <div class="card-body">
-                                    <div class="instru-name">
-                                        <h4 class="m-0 pb-1"">Esther Howard</h4>
-                                        <p class=" m-0 pb-3" style="color: #4b5563;">Developer of Bootcamp</p>
+                                <div class="card-body ">
+                                    <div class="instru-name ">
+                                        <h4 class="m-0 pb-1 ">Ross Johnson</h4>
+                                        <p class="m-0 pb-3 " style="color: #4b5563; ">Engineering Architect</p>
                                     </div>
                                     <div class="instru-rating d-flex justify-content-between ">
-                                        <div style="color: #f4b100;" class=" p-0">
-                                            <i class="fa-solid fa-star"></i>
+                                        <div style="color: #f4b100; " class=" p-0 ">
+                                            <i class="fa-solid fa-star "></i>
                                             <span>4.5</span>
                                         </div>
-                                        <div class="">
-                                            <span style="color: #2e3237;">5,128</span> <span
-                                                style="color: #666;">Students</span>
+                                        <div class=" ">
+                                            <span style="color: #2e3237; ">7,423 </span> <span
+                                                style="color: #666; ">Students</span>
                                         </div>
-                                        <div class="p-0">
-                                            <span style="color: #2e3237;"> 5 </span>
-                                            <span style="color: #666;">Course</span>
+                                        <div class="p-0 ">
+                                            <span style="color: #2e3237; "> 8 </span>
+                                            <span style="color: #666; ">Course</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 ">
                             <div class="card ">
-                                <div class="card-img">
-                                    <img src="/assets/img/instructor/instructor-img-3.jpg" alt="">
+                                <div class="card-img ">
+                                    <img src="/assets/img/instructor/instructor-img-4.jpg " alt=" ">
                                 </div>
-                                <div class="card-body">
-                                    <div class="instru-name">
-                                        <h4 class="m-0 pb-1">Ross Johnson</h4>
-                                        <p class="m-0 pb-3" style="color: #4b5563;">Engineering Architect</p>
+                                <div class="card-body ">
+                                    <div class="instru-name ">
+                                        <h4 class="m-0 pb-1 ">James Davies</h4>
+                                        <p class="m-0 pb-3 " style="color: #4b5563; ">Web Developer and Designer</p>
                                     </div>
                                     <div class="instru-rating d-flex justify-content-between ">
-                                        <div style="color: #f4b100;" class=" p-0">
-                                            <i class="fa-solid fa-star"></i>
+                                        <div style="color: #f4b100; " class=" p-0 ">
+                                            <i class="fa-solid fa-star "></i>
                                             <span>4.5</span>
                                         </div>
-                                        <div class="">
-                                            <span style="color: #2e3237;">7,423 </span> <span
-                                                style="color: #666;">Students</span>
+                                        <div class=" ">
+                                            <span style="color: #2e3237; ">3,896</span> <span
+                                                style="color: #666; ">Students</span>
                                         </div>
-                                        <div class="p-0">
-                                            <span style="color: #2e3237;"> 8 </span>
-                                            <span style="color: #666;">Course</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card ">
-                                <div class="card-img">
-                                    <img src="/assets/img/instructor/instructor-img-4.jpg" alt="">
-                                </div>
-                                <div class="card-body">
-                                    <div class="instru-name">
-                                        <h4 class="m-0 pb-1">James Davies</h4>
-                                        <p class="m-0 pb-3" style="color: #4b5563;">Web Developer and Designer</p>
-                                    </div>
-                                    <div class="instru-rating d-flex justify-content-between ">
-                                        <div style="color: #f4b100;" class=" p-0">
-                                            <i class="fa-solid fa-star"></i>
-                                            <span>4.5</span>
-                                        </div>
-                                        <div class="">
-                                            <span style="color: #2e3237;">3,896</span> <span
-                                                style="color: #666;">Students</span>
-                                        </div>
-                                        <div class="p-0">
-                                            <span style="color: #2e3237;"> 5 </span>
-                                            <span style="color: #666;">Course</span>
+                                        <div class="p-0 ">
+                                            <span style="color: #2e3237; "> 5 </span>
+                                            <span style="color: #666; ">Course</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class=" d-flex justify-content-center mt-4">
-                        <button class=" btn">See All Instructor</button>
+<<<<<<< HEAD
+                    <div class=" d-flex justify-content-center mt-4 ">
+                        <button class=" btn ">See All Instructor</button>
+=======
+                    <ul class="nav nav-pills " id="pills-tab " role="tablist ">
+                        <li class="nav-item " role="presentation ">
+                            <button class="nav-link active " id="pills-home-tab " data-bs-toggle="pill " data-bs-target="#pills-home " type="button " role="tab " aria-controls="pills-home " aria-selected="true ">Web Dev</button>
+                        </li>
+                        <li class="nav-item " role="presentation ">
+                            <button class="nav-link " id="pills-profile-tab " data-bs-toggle="pill " data-bs-target="#pills-profile " type="button " role="tab " aria-controls="pills-profile " aria-selected="false ">Mobile Dev</button>
+                        </li>
+                        <li class="nav-item " role="presentation ">
+                            <button class="nav-link " id="pills-contact-tab " data-bs-toggle="pill " data-bs-target="#pills-contact " type="button " role="tab " aria-controls="pills-contact " aria-selected="false ">Grapic Design</button>
+                        </li>
+                    </ul>
+                    <!-- Web dev -->
+                    <div class="tab-content " id="pills-tabContent ">
+                        <div class="tab-pane fade show active " id="pills-home " role="tabpanel " aria-labelledby="pills-home-tab " tabindex="0 ">
+                            <div class="swiper mySwiper mt-5 ">
+                                <div class="swiper-wrapper mb-5 ">
+                                    <!-- HTML -->
+                                    <div class="swiper-slide ">
+                                        <a class="card-link " href=" ">
+                                            <div class="card ">
+                                                <img class="card-img " src="/assets/img/course/python.jpg " class="card-img-top " alt="... ">
+                                                <div class="card-body ">
+                                                    <p class="card-text ">Python: Introduct the basic of Python to build a system.</p>
+                                                    <div class="card-contect d-flex justify-content-start ">
+                                                        <i class="fa-regular fa-clock "></i><span class="me-2 ">1h 30m</span> , <span class="ms-2 ">Beginner</span>
+                                                    </div>
+                                                    <div class="card-recommade ">
+                                                        <i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color
+                                                "></i><i class="fa-solid fa-star rating-color "></i>
+                                                        <span class="rating-color ">4.5</span> (9,200)
+                                                    </div>
+                                                    <hr>
+                                                    <div class="card-teacher d-flex justify-content-between align-items-center ">
+                                                        <div class="d-flex align-items-center ">
+                                                            <div class="card-profile ">
+                                                                <img src="/assets/img/teacher/man.jpeg " width="50px " alt=" ">
+                                                            </div>
+                                                            <span class="ms-2 ">
+                                                                Thorn Rithy
+                                                            </span>
+                                                        </div>
+                                                        <i class="fa-regular fa-bookmark "></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- CSS -->
+                                    <div class="swiper-slide ">
+                                        <a class="card-link " href=" ">
+                                            <div class="card ">
+                                                <img class="card-img " src="/assets/img/course/html.jpg " class="card-img-top " alt="... ">
+                                                <div class="card-body ">
+                                                    <p class="card-text ">HTML: Introduct the basic of HTML to build a website.</p>
+                                                    <div class="card-contect d-flex justify-content-start ">
+                                                        <i class="fa-regular fa-clock "></i><span class="me-2 ">1h 30m</span> , <span class="ms-2 ">Beginner</span>
+                                                    </div>
+                                                    <div class="card-recommade ">
+                                                        <i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color
+                                                "></i><i class="fa-solid fa-star rating-color "></i>
+                                                        <span class="rating-color ">4.5</span> (9,200)
+                                                    </div>
+                                                    <hr>
+                                                    <div class="card-teacher d-flex justify-content-between align-items-center ">
+                                                        <div class="d-flex align-items-center ">
+                                                            <div class="card-profile ">
+                                                                <img src="/assets/img/teacher/woman.jpeg " width="50px " alt=" ">
+                                                            </div>
+                                                            <span class="ms-2 ">
+                                                                Tith Ang Monyvann
+                                                            </span>
+                                                        </div>
+                                                        <i class="fa-regular fa-bookmark "></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- JS -->
+                                    <div class="swiper-slide ">
+                                        <a class="card-link " href=" ">
+                                            <div class="card ">
+                                                <img class="card-img " src="/assets/img/course/css.jpg " class="card-img-top " alt="... ">
+                                                <div class="card-body ">
+                                                    <p class="card-text ">CSS: Introduct the Intermediate CSS lesson to build a website.</p>
+                                                    <div class="card-contect d-flex justify-content-start ">
+                                                        <i class="fa-regular fa-clock "></i><span class="me-2 ">1h 30m</span> , <span class="ms-2 ">Intermediate</span>
+                                                    </div>
+                                                    <div class="card-recommade ">
+                                                        <i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color
+                                                "></i><i class="fa-solid fa-star rating-color "></i>
+                                                        <span class="rating-color ">4.5</span> (9,200)
+                                                    </div>
+                                                    <hr>
+                                                    <div class="card-teacher d-flex justify-content-between align-items-center ">
+                                                        <div class="d-flex align-items-center ">
+                                                            <div class="card-profile ">
+                                                                <img src="/assets/img/teacher/man.jpeg " width="50px " alt=" ">
+                                                            </div>
+                                                            <span class="ms-2 ">
+                                                                Thorn Rithy
+                                                            </span>
+                                                        </div>
+                                                        <i class="fa-regular fa-bookmark "></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- React -->
+                                    <div class="swiper-slide ">
+                                        <a class="card-link " href=" ">
+                                            <div class="card ">
+                                                <img class="card-img " src="/assets/img/course/js.jpg " class="card-img-top " alt="... ">
+                                                <div class="card-body ">
+                                                    <p class="card-text ">JS: Introduct the basic of JS to build an animation website.</p>
+                                                    <div class="card-contect d-flex justify-content-start ">
+                                                        <i class="fa-regular fa-clock "></i><span class="me-2 ">1h 30m</span> , <span class="ms-2 ">Beginner</span>
+                                                    </div>
+                                                    <div class="card-recommade ">
+                                                        <i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color
+                                                "></i><i class="fa-solid fa-star rating-color "></i>
+                                                        <span class="rating-color ">4.5</span> (9,200)
+                                                    </div>
+                                                    <hr>
+                                                    <div class="card-teacher d-flex justify-content-between align-items-center ">
+                                                        <div class="d-flex align-items-center ">
+                                                            <div class="card-profile ">
+                                                                <img src="/assets/img/teacher/man.jpeg " width="50px " alt=" ">
+                                                            </div>
+                                                            <span class="ms-2 ">
+                                                                Thorn Rithy
+                                                            </span>
+                                                        </div>
+                                                        <i class="fa-regular fa-bookmark "></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Python -->
+                                    <div class="swiper-slide ">
+                                        <a class="card-link " href=" ">
+                                            <div class="card ">
+                                                <img class="card-img " src="/assets/img/course/react.jpg " class="card-img-top " alt="... ">
+                                                <div class="card-body ">
+                                                    <p class="card-text ">React: Learn from basic to advance of React.</p>
+                                                    <div class="card-contect d-flex justify-content-start ">
+                                                        <i class="fa-regular fa-clock "></i><span class="me-2 ">1h 30m</span> , <span class="ms-2 ">Beginner</span>
+                                                    </div>
+                                                    <div class="card-recommade ">
+                                                        <i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color
+                                                "></i><i class="fa-solid fa-star rating-color "></i>
+                                                        <span class="rating-color ">4.5</span> (9,200)
+                                                    </div>
+                                                    <hr>
+                                                    <div class="card-teacher d-flex justify-content-between align-items-center ">
+                                                        <div class="d-flex align-items-center ">
+                                                            <div class="card-profile ">
+                                                                <img src="/assets/img/teacher/woman.jpeg " width="50px " alt=" ">
+                                                            </div>
+                                                            <span class="ms-2 ">
+                                                                Tith Ang Monyvann
+                                                            </span>
+                                                        </div>
+                                                        <i class="fa-regular fa-bookmark "></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Swiper Pagination -->
+                                <div class="swiper-pagination "></div>
+                            </div>
+                        </div>
+                        <!-- Mobile App -->
+                        <div class="tab-pane fade " id="pills-profile " role="tabpanel " aria-labelledby="pills-contact-tab " tabindex="0 ">
+                            <div class="swiper mySwiper mt-5 ">
+                                <div class="swiper-wrapper mb-5 ">
+                                    <!-- C++ -->
+                                    <div class="swiper-slide ">
+                                        <a class="card-link " href=" " style="width: 18rem; ">
+                                            <div class="card ">
+                                                <img class="card-img " src="/assets/img/course/C++.png " class="card-img-top " alt="... ">
+                                                <div class="card-body ">
+                                                    <p class="card-text ">C++: Introduct the basic of C++ to build a system.</p>
+                                                    <div class="card-contect d-flex justify-content-start ">
+                                                        <i class="fa-regular fa-clock "></i><span class="me-2 ">1h 30m</span> , <span class="ms-2 ">Beginner</span>
+                                                    </div>
+                                                    <div class="card-recommade ">
+                                                        <i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color
+                                                "></i><i class="fa-solid fa-star rating-color "></i>
+                                                        <span class="rating-color ">4.5</span> (9,200)
+                                                    </div>
+                                                    <hr>
+                                                    <div class="card-teacher d-flex justify-content-between align-items-center ">
+                                                        <div class="d-flex align-items-center ">
+                                                            <div class="card-profile ">
+                                                                <img src="/assets/img/teacher/man.jpeg " width="50px " alt=" ">
+                                                            </div>
+                                                            <span class="ms-2 ">
+                                                                Thorn Rithy
+                                                            </span>
+                                                        </div>
+                                                        <i class="fa-regular fa-bookmark "></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Python -->
+                                    <div class="swiper-slide ">
+                                        <a class="card-link " href=" ">
+                                            <div class="card ">
+                                                <img class="card-img " src="/assets/img/course/python.jpg " class="card-img-top " alt="... ">
+                                                <div class="card-body ">
+                                                    <p class="card-text ">Python: Introduct the basic of Python to build a system.</p>
+                                                    <div class="card-contect d-flex justify-content-start ">
+                                                        <i class="fa-regular fa-clock "></i><span class="me-2 ">1h 30m</span> , <span class="ms-2 ">Beginner</span>
+                                                    </div>
+                                                    <div class="card-recommade ">
+                                                        <i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color
+                                                "></i><i class="fa-solid fa-star rating-color "></i>
+                                                        <span class="rating-color ">4.5</span> (9,200)
+                                                    </div>
+                                                    <hr>
+                                                    <div class="card-teacher d-flex justify-content-between align-items-center ">
+                                                        <div class="d-flex align-items-center ">
+                                                            <div class="card-profile ">
+                                                                <img src="/assets/img/teacher/woman.jpeg " width="50px " alt=" ">
+                                                            </div>
+                                                            <span class="ms-2 ">
+                                                                Tith Ang Monyvann
+                                                            </span>
+                                                        </div>
+                                                        <i class="fa-regular fa-bookmark "></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Dart -->
+                                    <div class="swiper-slide ">
+                                        <a class="card-link " href=" ">
+                                            <div class="card ">
+                                                <img class="card-img " src="/assets/img/course/dart.webp " class="card-img-top " alt="... ">
+                                                <div class="card-body ">
+                                                    <p class="card-text ">Dart: Learn the dart to know and can you flutter to build the app.</p>
+                                                    <div class="card-contect d-flex justify-content-start ">
+                                                        <i class="fa-regular fa-clock "></i><span class="me-2 ">1h 30m</span> , <span class="ms-2 ">Intermediate</span>
+                                                    </div>
+                                                    <div class="card-recommade ">
+                                                        <i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color
+                                                "></i><i class="fa-solid fa-star rating-color "></i>
+                                                        <span class="rating-color ">4.5</span> (9,200)
+                                                    </div>
+                                                    <hr>
+                                                    <div class="card-teacher d-flex justify-content-between align-items-center ">
+                                                        <div class="d-flex align-items-center ">
+                                                            <div class="card-profile ">
+                                                                <img src="/assets/img/teacher/man.jpeg " width="50px " alt=" ">
+                                                            </div>
+                                                            <span class="ms-2 ">
+                                                                Thorn Rithy
+                                                            </span>
+                                                        </div>
+                                                        <i class="fa-regular fa-bookmark "></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Flutter -->
+                                    <div class="swiper-slide ">
+                                        <a class="card-link " href=" ">
+                                            <div class="card ">
+                                                <img class="card-img " src="/assets/img/course/flutter.jpeg " class="card-img-top " alt="... ">
+                                                <div class="card-body ">
+                                                    <p class="card-text ">Flutter: Learning with flutter to build a platform you want.</p>
+                                                    <div class="card-contect d-flex justify-content-start ">
+                                                        <i class="fa-regular fa-clock "></i><span class="me-2 ">1h 30m</span> , <span class="ms-2 ">Advances</span>
+                                                    </div>
+                                                    <div class="card-recommade ">
+                                                        <i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color
+                                                "></i><i class="fa-solid fa-star rating-color "></i>
+                                                        <span class="rating-color ">4.5</span> (9,200)
+                                                    </div>
+                                                    <hr>
+                                                    <div class="card-teacher d-flex justify-content-between align-items-center ">
+                                                        <div class="d-flex align-items-center ">
+                                                            <div class="card-profile ">
+                                                                <img src="/assets/img/teacher/man.jpeg " width="50px " alt=" ">
+                                                            </div>
+                                                            <span class="ms-2 ">
+                                                                Thorn Rithy
+                                                            </span>
+                                                        </div>
+                                                        <i class="fa-regular fa-bookmark "></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- C++ -->
+                                    <div class="swiper-slide ">
+                                        <a class="card-link " href=" ">
+                                            <div class="card ">
+                                                <img class="card-img " src="/assets/img/course/react.jpg " class="card-img-top " alt="... ">
+                                                <div class="card-body ">
+                                                    <p class="card-text ">React: Learn from basic to advance of React.</p>
+                                                    <div class="card-contect d-flex justify-content-start ">
+                                                        <i class="fa-regular fa-clock "></i><span class="me-2 ">1h 30m</span> , <span class="ms-2 ">Beginner</span>
+                                                    </div>
+                                                    <div class="card-recommade ">
+                                                        <i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color
+                                                "></i><i class="fa-solid fa-star rating-color "></i>
+                                                        <span class="rating-color ">4.5</span> (9,200)
+                                                    </div>
+                                                    <hr>
+                                                    <div class="card-teacher d-flex justify-content-between align-items-center ">
+                                                        <div class="d-flex align-items-center ">
+                                                            <div class="card-profile ">
+                                                                <img src="/assets/img/teacher/woman.jpeg " width="50px " alt=" ">
+                                                            </div>
+                                                            <span class="ms-2 ">
+                                                                Tith Ang Monyvann
+                                                            </span>
+                                                        </div>
+                                                        <i class="fa-regular fa-bookmark "></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Swiper Pagination -->
+                                <div class="swiper-pagination "></div>
+                            </div>
+                        </div>
+                        <!-- Grapic Design -->
+                        <div class="tab-pane fade " id="pills-contact " role="tabpanel " aria-labelledby="pills-profile-tab " tabindex="0 ">
+                            <div class="swiper mySwiper mt-5 ">
+                                <div class="swiper-wrapper mb-5 ">
+                                    <!-- figma -->
+                                    <div class="swiper-slide ">
+                                        <a class="card-link " href=" ">
+                                            <div class="card ">
+                                                <img class="card-img " src="/assets/img/course/figma.jpg " class="card-img-top " alt="... ">
+                                                <div class="card-body ">
+                                                    <p class="card-text ">Figma: Start learning and explore the basic of designing with figma.</p>
+                                                    <div class="card-contect d-flex justify-content-start ">
+                                                        <i class="fa-regular fa-clock "></i><span class="me-2 ">1h 30m</span> , <span class="ms-2 ">Beginner</span>
+                                                    </div>
+                                                    <div class="card-recommade ">
+                                                        <i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color
+                                                "></i><i class="fa-solid fa-star rating-color "></i>
+                                                        <span class="rating-color ">4.5</span> (9,200)
+                                                    </div>
+                                                    <hr>
+                                                    <div class="card-teacher d-flex justify-content-between align-items-center ">
+                                                        <div class="d-flex align-items-center ">
+                                                            <div class="card-profile ">
+                                                                <img src="/assets/img/teacher/man.jpeg " width="50px " alt=" ">
+                                                            </div>
+                                                            <span class="ms-2 ">
+                                                                Thorn Rithy
+                                                            </span>
+                                                        </div>
+                                                        <i class="fa-regular fa-bookmark "></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Photoshope -->
+                                    <div class="swiper-slide ">
+                                        <a class="card-link " href=" ">
+                                            <div class="card ">
+                                                <img class="card-img " src="/assets/img/course/ps.jpg " class="card-img-top " alt="... ">
+                                                <div class="card-body ">
+                                                    <p class="card-text ">Photoshope: Learning the how to design with Photoshope to create your skills.</p>
+                                                    <div class="card-contect d-flex justify-content-start ">
+                                                        <i class="fa-regular fa-clock "></i><span class="me-2 ">1h 30m</span> , <span class="ms-2 ">Advances</span>
+                                                    </div>
+                                                    <div class="card-recommade ">
+                                                        <i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color "></i><i class="fa-solid fa-star rating-color
+                                                "></i><i class="fa-solid fa-star rating-color "></i>
+                                                        <span class="rating-color ">4.5</span> (9,200)
+                                                    </div>
+                                                    <hr>
+                                                    <div class="card-teacher d-flex justify-content-between align-items-center ">
+                                                        <div class="d-flex align-items-center ">
+                                                            <div class="card-profile ">
+                                                                <img src="/assets/img/teacher/woman.jpeg " width="50px " alt=" ">
+                                                            </div>
+                                                            <span class="ms-2 ">
+                                                                Tith Ang Monyvann
+                                                            </span>
+                                                        </div>
+                                                        <i class="fa-regular fa-bookmark "></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Swiper Pagination -->
+                                <div class="swiper-pagination "></div>
+                            </div>
+                        </div>
+>>>>>>> a09b33f (create a website tap mobile & grapic design card)
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.min.js "></script>
     <script>
-        const fileInput = document.getElementById("fileUpload");
+        const fileInput = document.getElementById("fileUpload ");
 
-        fileInput.addEventListener("change", function () {
+        fileInput.addEventListener("change ", function () {
             if (fileInput.files.length > 0) {
                 alert("File selected: " + fileInput.files[0].name);
             }
         });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js "></script>
 
     <!-- Swiper JS Config -->
     <script>
-        var swiper2 = new Swiper(".mySwiper", {
+        var swiper2 = new Swiper(".mySwiper ", {
             spaceBetween: 30,
             slidesPerView: 4,
             //centeredSlides: true,
@@ -624,12 +1014,12 @@
             },
             speed: 1500,
             pagination: {
-                el: ".swiper-pagination",
+                el: ".swiper-pagination ",
                 clickable: true,
             },
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: ".swiper-button-next ",
+                prevEl: ".swiper-button-prev ",
             },
         });
 
